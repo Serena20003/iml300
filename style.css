@@ -1,77 +1,191 @@
-canvas {
-  display: block;
+.index {
+  background: #000000;
+  color: #FFFFFF;
 }
 
-.readable {
-  width: 70vw; 
-  left: 15vw;
-  top: -125px;
-  position: relative;
+.congrats {
+  background-color: transparent;
+  z-index: 1;
 }
 
-.oxygen-light, a {
-  font-family: "Oxygen", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+/********************************************************
+******************      fonts     ***********************
+********************************************************/
 
-.oxygen-regular, p  {
-  font-family: "Oxygen", sans-serif;
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 900 */
+
+.inter_regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
 }
 
-.oxygen-bold, h1, h2, h3, summary {
-  font-family: "Oxygen", sans-serif;
+.inter_bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
 }
 
-h1, h2, h3, summary {
+.inter_italic {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" -10;
+}
+
+.regular {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15
+}
+
+/********************************************************
+******************     colors     ***********************
+********************************************************/
+
+.white {
+  color: #FFFFFF;
+}
+
+.black {
+  color: #000000;
+}
+
+.grey {
+  color: #D9D9D9;
+}
+
+.brown {
+  color: #B86A59;
+}
+
+.background_brown {
+  background: #B86A59;
+}
+
+.background_white {
+  background: #FFFFFF;
+}
+
+.background_black {
+  background: #000000;
+}
+
+.background_grey {
+  background: #D9D9D9;
+}
+
+
+
+/********************************************************
+******************   index page   ***********************
+********************************************************/
+
+.title {
+  position: relative;
+  font-size: 100px;
+  text-align: center;
+  top: 25vh;
+  width: 50vw;
+}
+
+.title_container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  border-radius: 23px;
+  width: 139px; 
+  height: 69px;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.index_button_wrapper {
+  position: relative;
+  top: 30vh;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-.flex_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.window {
+  display: none;
+  background: #FFFFFF;
+  opacity: 0.75;
+  width: 20vw;
+  height: 40vh;
 }
 
-.flex_box {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  margin: 15px;
-}
-
-.flex_box a, .flex_box iframe {
-  position: absolute;
-  width: inherit;
-    text-align: center;
-}
-
-.flex_box iframe {
-  height: inherit;
-}
-
-.flex_box a {
-    display: none;
-}
-
-#presentation_img: hover {
+.window:hover {
   cursor: pointer;
+  opacity: 1;
 }
 
-.left_table {
-    position: sticky;
-    top: 5px;
+.window p {
+  text-align: center;
+  font-size: 64px;
+  color: #000000;
+  opacity: 1;
 }
 
-.left_table div {
-    margin: 5px;
+#window_space {
+  z-index: 1;
 }
 
-.left_table div:hover {
-  cursor:pointer;
+.maze_short_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 600px;
+}
+
+.maze_short {
+  position: absolute;
+  width: 315px;
+  height: 560px;
+}
+
+.amusing_pics {
+  width: 50vw; 
+  left: 25vw; 
+  position: relative
+}
+
+.top_sticky_button {
+  position: sticky;
+  top: 10px;
+  z-index: 9999;
+}
+
+.bottom_sticky_button {
+  position: sticky;
+  bottom: 10px;
+  z-index: 9999;
+}
+
+#maze_timer:hover {
+    cursor: auto;
+  opacity: 1;
 }

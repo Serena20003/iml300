@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/de3a8ecd-7916-4eda-9307-f16c78cef0e2/icon.png?v=1713141548508"
+    />
+
+    <title>Cyberland</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <!--    jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="/amusement_script.js"></script>
+    
+    <style>
+      p {
+        font-size: 20px;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+      }
+    </style>
+  </head>
+
+  <body class="background_white regular">
+    <div
+      id="back_button"
+      class="regular background_grey black button top_sticky_button" onclick="window.location='/maze.html'"
+    >
+      <img
+        src="https://cdn.glitch.global/de3a8ecd-7916-4eda-9307-f16c78cef0e2/Arrow.png?v=1713952319819"
+      />
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+    <h1>
+      Foreword
+    </h1>
+    <div style="width: 70vw;">
+      <p>
+      We were keeping our eye on .1984.  When the year came and the prophecy
+didn't, thoughtful Americans sang softly in praise of themselves.  the
+roots of liberal democracy had held.  Wherever else the terror had
+happened, we, at least, had not been visited by Orwellian nightmares.
+But we had forgotten that alongside Orwell's dark vision, there was
+another--slightly older, slightly less well known, equally chilling:
+Aldous Huxley's Brave New World.  Contrary to common belief even among
+the educated, Huxley and Orwell did not prophesy the same thing.  Orwell
+warns that we will be overcome by an externally imposed oppression.  But
+in Huxley's vision, no Big Brother is required to deprive people of
+their autonomy, maturity and history.  As he saw it, people will come to
+love their oppression, to adore the technologies that undo their
+capacities to think.
+What Orwell feared were those who would ban books.  What Huxley feared
+was that there would be no reason to ban a book, for there would be no
+one who wanted to read one.  Orwell feared those who would deprive us of
+information.  Huxley feared those who would give us so much that we
+would be reduced to passivity and egoism.  Orwell feared that the truth
+would be concealed from us.  Huxley feared the truth would be drowned in
+a sea of irrelevance.  Orwell feared we would become a captive culture.
+Huxley feared we would become a trivial culture, preoccupied with some
+equivalent of the feelies, the orgy porgy, and the centrifugal
+bumblepuppy.  As Huxley re
+marked in Brave New World Revisited, the civil libertarians and
+rationalists who are ever on the alert to oppose tyranny "failed to take
+into account man's almost infinite appetite for distractions." In 1984,
+Huxley added, people are controlled by inflicting pain.  In Brave New
+World, they are controlled by inflicting pleasure.  In short, Orwell
+feared that what we hate will ruin us. Huxley feared that what we love
+will ruin us.
+This book is about the possibility that Huxley, not Orwell, was right.
+Part I.
+        </p>
+    </div>
+<h1>
+  the <a href="/congrats.html">Medium</a> Is the Metaphor
+    </h1>
+    <div style="width: 70vw;">
+      <p>
+At different times in our historY, different cities have been the focal point of a radiating American spirit. In the late eighteenth centurY, for example, Boston was the center of a political radicalism that ignited a shot heard round the world--a shot that could not have been fired any other place but the suburbs of Boston. At its report, all Americans, including Virginians,, became Bostonians at heart. In the mid-nineteenth centurY, New York became the symbol of the idea of a melting-pot America--or at least a non-English one--as the wretched refuse from all over the world disembarked at Ellis Island and spread over the land their strange languages and even stranger ways. In the early twentieth centurY, Chicago, the city of big shoulders and heavy winds, came to symbolize the industrial energy and dynamism of America. If there is-a statue of a hog butcher somewhere in Chicago, then it stands as a reminder of the time when America was railroads, cattle, steel mills and entrepreneurial adventures. If there is no such statue, there ought to be, just as there is a statue of a Minute Man to recall the Age of Boston, as the Statue of Liberty recalls the Age of New York.
+
+Today, we must look to the city of Las Vegas, Nevada, as a metaphor of
+our national character and aspiration, its symbol a thirty-foot-high
+cardboard picture of a slot machine and a chorus girl.  For Las Vegas is
+a city entirely devoted to the idea of entertainment, and as such
+proclaims the spirit of a culture in which all public discourse
+increasingly takes the form of entertainment. Our politics, religion,
+news, athletics, education and
+commerce have been transformed into congenial adjuncts of show business,
+largely without protest or even much popular notice.  the result is that
+we are a people on the verge of amusing ourselves to death. As I write,
+the President of the United States is a former Hollywood movie actor.
+One of his principal challengers in 1984 was once a featured player on
+television's most glamorous show of the 1960s that is to say, an
+astronaut.  Naturally, a movie has been made about his extraterrestrial
+adventure.  Former nominee George McGovern has hosted the popular
+television show "Saturday Night Live." So has a candidate of more recent
+vintage, the Reverend Jesse Jackson. Meanwhile, former President Richard
+Nixon, who once claimed he lost an election because he was sabotaged by
+makeup men, has offered Senator Edward Kennedy advice on how to make a
+serious run for the presidency: lose twenty pounds.  Although the
+Constitution makes no mention of it, it would appear that fat people are
+now effectively excluded from running for high political office.
+Probably bald people as well.  Almost certainly those whose looks are
+not significantly enhanced by the cosmetician's art.  Indeed, we may
+have reached the point where cosmetics has replaced ideology as the
+field of expertise over which a politician must have competent control.
+America's journalists, i.e., television newscasters, have not missed the
+point.  Most spend more time with their hair dryers than with their
+scripts, with the result that they comprise the most glamorous group of
+people this side of Las Vegas.  Although the Federal Communications Act
+makes no mention of it, those without camera appeal are excluded from
+addressing the public about what is called "the news of the day." Those
+with camera appeal can command salaries exceeding one million dollars a
+year. American businessmen discovered, long before the rest of us, that
+the quality and usefulness of their goods are subordinate to the
+artifice of their display; that, in fact, half the principles of
+the <a href="/congrats.html">Medium</a> Is the Metaphor
+capitalism as praised by Adam Smith or condemned by Karl Marx are
+irrelevant.  Even the Japanese, who are said to make better cars than
+the Americans, know that economics is less a science than a performing
+art, as Toyota's yearly advertising budget confirms. Not long ago, I saw
+
+Billy Graham join with Shecky Green Red Buttons, Dionne Warwick, Milton
+Berle and other theologians in a tribute to George Burns, who was
+celebrating himself for surviving eighty years in show business.  the
+Reverend Graham exchanged one-liners with Burns about making
+preparations for Eternity.  Although the Bible makes no mention of it,
+the Reverend Graham assured the audience that God loves those who make
+people laugh.  It was an honest mistake.  He merely mistook NBC for God.
+Dr.  Ruth Westheimer is a psychologist who has a popular radio program
+and a nightclub act in which she informs her audiences about sex in all
+of its infinite variety and in language once reserved for the bedroom
+and street corners.  She is almost as entertaining as the Reverend Billy
+Graham, and has been quoted as saying, "I don't start out to be funny.
+But if it comes out that way, I use it.  If they call me an entertainer,
+I say that's great.  When a professor teaches with a sense of humor,
+people walk away remembering." She did not say what they remember or of
+what use their remembering is.  But she has a point: It's great to be an
+entertainer.  Indeed, in America God favors all those who possess both a
+talent and a format to amuse, whether they be preachers, athletes,
+entrepreneurs, politicians, teachers or journalists.  In America, the
+least amusing people are its professional entertainers. Culture watchers
+and worriers--those of the type who read books like this one--will know
+that the examples above are not aberrations but, in fact, clichs.  There
+is no shortage of critics who have observed and recorded the dissolution
+of public discourse in America and its conversion into the arts of show
+business. But most of them, I believe, have barely begun to tell the
+story of the origin and.  meaning of this descent into a vast
+triviality. Those who have written vigorously on the matter tell us, for
+example, that what is happening is the residue of an exhausted
+capitalism; or, on the contrary, that it is the tasteless fruit of the
+maturing of capitalism; or that it is the neurotic aftermath of the Age
+of Freud; or the retribution of our allowing God to perish; or that it
+all comes from the old stand-bys, greed and ambition. I have attended
+carefully to these explanations, and I do not say there is nothing to
+learn from them.  Marxists, Freudians, Levi-Straussians, even Creation
+Scientists are not to be taken lightly.  And, in any case, I should be
+very surprised if the story I have to tell is anywhere near the whole
+truth.  We are all, as Huxley says someplace, Great Abbreviators,
+meaning that none of us has the wit to know the whole truth, the time to
+tell it if we believed we did, or an audience so gullible as to accept
+it. But you will find an argument here that presumes a clearer grasp of
+the matter than many that have come before.  Its value, such as it is,
+resides in the directness of its perspective, which has its origins in
+observations made 2,300 years ago by Plato.  It is an argument that
+
+fixes its attention on the forms of human conversation, and postulates
+that how we are obliged to conduct such conversations will have the
+strongest possible influence on what ideas we can conveniently express.
+And what ideas are convenient to express inevitably become the important
+content of a culture.
+I use the word "conversation" metaphorically to refer not only to speech
+but to all techniques and technologies that permit people of a
+particular culture to exchange messages.  In this sense, all culture is
+a conversation or, more precisely, a corporation of conversations,
+conducted in a variety of symbolic modes. Our attention here is on how
+forms of public discourse regulate and even dictate what kind of content
+can issue from such fOrmS. To take a simple example of what this means,
+consider the
+primitive technology of smoke signals.  While I do not know exactly what
+content was once carried in the smoke signals of American Indians, I can
+safely guess that it did not include philosophical argument.  Puffs of
+smoke are insufficiently complex to express ideas on the nature of
+existence, and even if they were not, a Cherokee philosopher would run
+short of either wood or blankets long before he reached his second
+axiom.  You cannot use smoke to do philosophy.  Its form excludes the
+content. To take an example closer to home: As I suggested earlier, it
+is implausible to imagine that anyone like our twenty-seventh President,
+the multi-chinned, three-hundred-pound William Howard Taft, could be put
+forward as a presidential candidate in today's world.  the shape of a
+man's body is largely irrelevant to the shape of his ideas when he is
+addressing a public in writing or on the radio or, for that matter, in
+smoke signals.  But it is quite relevant on television.  the grossness
+of a three-hundred-pound image, even a talking one, would easily
+Overwhelm any logical or spiritual subtleties conveyed by speech.  For
+on television, discourse is conducted largely through visual imagery,
+which is to say that television gives us a conversation in images, not
+words.  the emergence of the image-manager in the political arena and
+the concomitant decline of the speech writer attest to the fact that
+television demands a different kind of content from other media.  You
+cannot do political philosophy on television. Its form works against the
+content. To give still another example, one of more complexity: the
+information, the content, or, if you will, the "stuff" that makes up
+what is called "the news of the day" did not exist--could not exist--in
+a world that lacked the media to give it expression. I do not mean that
+things like fires, wars, murders and love affairs did not, ever and
+always, happen in places all over the world.  I mean that lacking a
+technology to advertise them, people could not attend to them, could not
+
+include them in their daily business.  Such information simply could not
+exist as
+part of the content of culture.  This idea--that there is a content
+called "the news of the day"--was entirely created by the telegraph (and
+since amplified by newer media), which made it possible to move
+decontextualized information over vast spaces at incredible speed.  the
+news of the day is a figment of our technological imagination.  It is,
+quite precisely, a media event. We attend to fragments of events from
+all over the world because we have multiple media whose forms are well
+suited to fragmented conversation.  Cultures without speed-of-light
+media-let us say, cultures in which smoke signals are the most efficient
+space-conquering tool available--do not have news of the day.  Without a
+<a href="/congrats.html">medium</a> to create its form, the news of the day does not exist. To say
+it, then, as plainly as I can, this book is an inquiry into and a
+lamentation about the most significant American cultural fact of the
+second half of the twentieth century: the decline of the Age of
+Typography and the ascendancy of the Age of Television. This change-over
+has dramatically and irreversibly shifted the content and meaning of
+public discourse, since two media so vastly different cannot accommodate
+the same ideas.  As the influence of print wanes, the content of
+politics, religion, education, and anything else that comprises public
+business must change and be recast in terms that are most suitable to
+television. If all of this sounds suspiciously like Marshall McLuhan's
+aphorism, the <a href="/congrats.html">medium</a> is the message, I will not disavow the association
+(although it is fashionable to do so among respectable scholars who,
+were it not for McLuhan, would today be mute).  I met McLuhan thirty
+years ago when I was a graduate student and he an unknown English
+professor.  I believed then, as I believe now, that he spoke in the
+tradition of Orwell and Huxley--that is, as a prophesier, and I have
+remained steadfast to his teaching that the clearest way to see through
+a culture is to attend to its tools for conversation.  I might add that
+my interest in this point of view was first stirred by a prophet far
+more
+formidable than McLuhan, more ancient than Plato.  In studying the Bible
+as a young man, I found intimations of the idea that forms of media
+favor particular kinds of content and therefore are capable of taking
+command of a culture.  I refer specifically to the Decalogue, the Second
+Commandment of which prohibits the Israelites from making concrete
+images of anything. "Thou shalt not make unto thee any graven image, any
+likeness of any thing that is in heaven above, or that is in the earth
+beneath, or that is in the water beneath the earth." I wondered then, as
+so many others have, as to why the God of these people would have
+
+included instructions on how they were to symbolize, or not symbolize,
+their experience.  It is a strange injunction to include as part of an
+ethical system unless its author assumed a connection between forms of
+human communication and the quality of a culture.  We may hazard a guess
+that a people who are being asked to embrace an abstract, universal
+deity would be rendered unfit to do so by the habit of drawing pictures
+or making statues or depicting their ideas in any concrete,
+icono-graphic forms.  the God of the Jews was to exist in the Word and
+through the Word, an unprecedented conception requiring the highest
+order of abstract thinking.  Iconography thus became blasphemy so that a
+new kind of God could enter a culture. People like ourselves who are in
+the process of converting their culture from word-centered to
+image-centered might profit by reflecting on this Mosaic injunction. But
+even if I am wrong in these conjectures, it is, I believe, a wise and
+particularly relevant supposition that the media of communication
+available to a culture are a dominant influence on the formation of the
+culture's intellectual and social preoccupations. Speech, of course, is
+the primal and indispensable <a href="/congrats.html">medium</a>.  It made us human, keeps us human,
+and in fact defines what human means.  This is not to say that if there
+were no other means of communication all humans would find it equally
+convenient to speak about the same things in the same way.  We know
+enough about language to understand that variations in the
+structures of languages will result in variations in what may be called
+"world view." How people think about time and space, and about things
+and processes, will be greatly influenced by the grammatical features of
+their language.  We dare not suppose therefore that all human minds are
+unanimous in understanding how the world is put together.  But how much
+more divergence there is in world view among different cultures can be
+imagined when we consider the great number and variety of tools for
+conversation that go beyond speech.  For although culture is a creation
+of speech, it is recreated anew by every <a href="/congrats.html">medium</a> of communication--from
+painting to hieroglyphs to the alphabet to television.  Each <a href="/congrats.html">medium</a>,
+like language itself, makes possible a unique mode of discourse by
+providing a new orientation for thought, for expression, for
+sensibility.  Which, of course, is what McLuhan meant in saying the
+<a href="/congrats.html">medium</a> is the message.  His aphorism, however, is in need of amendment
+because, as it stands, it may lead one to confuse a message with a
+metaphor.  A message denotes a specific, concrete statement about the
+world.  But the forms of our media, including the symbols through which
+they permit conversation, do not make such statements.  They are rather
+like metaphors, working by unobtrusive but powerful implication to
+enforce their special definitions of reality.  Whether we are
+experiencing the world through the lens of speech or the printed word or
+
+the television camera, our media-metaphors classify the world for us,
+sequence it, frame it, enlarge it, reduce it, color it, argue a case for
+what the world is like.  As Ernst Cassirer remarked:
+Physical reality seems to recede in proportion as man's symbolic
+activity advances.  Instead of dealing with the things themselves man is
+in a sense constantly conversing with himself.  He has so enveloped
+himself in linguistic forms, in artistic images, in mythical symbols or
+religious rites that he cannot see or know anything except by the
+interposition of [an] artificial <a href="/congrats.html">medium</a>.
+What is peculiar about such interpositions of media is that their role
+in directing what we will see or know is so rarely noticed.  A person
+who reads a book or who watches television or who glances at his watch
+is not usually interested in how his mind is organized and controlled by
+these events, still less in what idea of the world is suggested by a
+book, television, or a watch.  But there are men and women who have
+noticed these things, especially in our own times.  Lewis Mumford, for
+example, has been one of our great noticers.  He is not the sort of a
+man who looks at a clock merely to see what time it is.  Not that he
+lacks interest in the content of clocks, which is of concern to everyone
+from moment to moment, but he is far more interested in how a clock
+creates the idea of "moment to moment." He attends to the philosophy of
+clocks, to clocks as metaphor, about which our education has had little
+to say and clock makers nothing at all.  "the clock," Mumford has
+concluded, "is a piece of power machinery whose 'product' is seconds and
+minutes." In manufacturing such a product, the clock has the effect of
+disassociating time from human events and thus nourishes the belief in
+an independent world of mathematically measurable sequences.  Moment to
+moment, it turns out, is not God's conception, or nature's.  It is man
+conversing with himself about and through a piece of machinery he
+created. In Mumford's great book Technics and Civilization, he shows
+how, beginning in the fourteenth century, the clock made us into
+time-keepers, and then time-savers, and now time-servers. In the
+process, we have learned irreverence toward the sun and the seasons, for
+in a world made up of seconds and minutes, the authority of nature is
+superseded.  Indeed, as Mumford points out, with the invention of the
+clock, Eternity ceased to serve as the measure and focus of human
+events.  And thus, though few would have imagined the connection, the
+inexorable ticking of the clock may have had more to do with the
+weakening of God's supremacy than all the treatises produced by the phi-
+losophers of the Enlightenment; that is to' say, the clock introduced a
+new form of conversation between man and God, in which God appears to
+
+have been the loser.  Perhaps Moses should have included another
+Commandment: Thou shalt not make mechanical representations of time.
+That the alphabet introduced a new form of conversation between man and
+man is by now a commonplace among scholars. To be able to see one's
+utterances rather than only to hear them is no small matter, though our
+education, once again, has had little to say about this.  Nonetheless,
+it is clear that phonetic writing created a new conception of knowledge,
+as well as a new sense of intelligence, of audience and of posterity,
+all of which Plato recognized at an early stage in the development of
+texts.  "No man of intelligence," he wrote in his Seventh Letter, "will
+venture to express his philosophical views in language, especially not
+in language that is unchangeable, which is true of that which is set
+down in written characters." This notwithstanding, he wrote voluminously
+and understood better than anyone else that the setting down of views in
+written characters would be the beginning of philosophy, not its end.
+Philosophy cannot exist without criticism, and writing makes it possible
+and convenient to subject thought to a continuous and concentrated
+scrutiny.  Writing freezes speech and in so doing gives birth to the
+grammarian, the logician, the rhetorician, the historian, the
+scientist--all those who must hold language before them so that they can
+see what it means, where it errs, and where it is leading. Plato knew
+all of this, which means that he knew that writing would bring about a
+perceptual revolution: a shift from the ear to the eye as an organ of
+language processing.  Indeed, there is a legend that to encourage such a
+shift Plato insisted that his students study geometry before entering
+his Academy.  If true, it was a sound idea, for as the great literary
+critic Northrop Frye has remarked, "the written word is far more
+powerful than simply a reminder: it re-creates the past in the present,
+and gives
+us, not the familiar remembered thing, but the glittering intensity of
+the summoned-up hallucination." 3 All that Plato surmised about the
+consequences of writing is now well understood by anthropologists,
+especially those who have studied cultures in which speech is the only
+source of complex conversation.  Anthropologists know that the written
+word, as Northrop Frye meant to suggest, is not merely an echo of a
+speaking voice.  It is another kind of voice altogether, a conjurer's
+trick of the first order.  It must certainly have appeared that way to
+those who invented it, and that is why we should not be surprised that
+the Egyptian god Thoth, who is alleged to have brought writing to the
+King Thamus, was also the god of magic.  People like ourselves may see
+nothing wondrous in writing, but our anthropologists know how strange
+and magical it appears to a purely oral people--a conversation with no
+one and yet with everyone.  What could be stranger than the silence one
+
+encounters when addressing a question to a text?  What could be more
+metaphysically puzzling than addressing an unseen audience, as every
+writer of books must do? And correcting oneself because one knows that
+an unknown reader will disapprove or misunderstand? I bring all of this
+up because what my book is about is how our own tribe is undergoing a
+vast and trembling shift from the magic of writing to the magic of
+electronics.  What I mean to point out here is that the introduction
+into a culture of a technique such as writing or a clock is not merely
+an extension of man's power to bind time but a transformation of his way
+of thinking--and, of course, of the content of his culture.  And that is
+what I mean to say by calling a <a href="/congrats.html">medium</a> a metaphor.  We are told in
+school, quite correctly, that a metaphor suggests what a thing is like
+by comparing it to something else.  And by the power of its suggestion,
+it so fixes a conception in our minds that we cannot imagine the one
+thing without the other: Light is a wave; language, a tree; God, a wise
+and venerable man; the mind, a dark cavern illuminated by knowledge. And
+if these
+metaphors no longer serve us, we must, in the nature of the matter, find
+others that will.  Light is a particle; language, a river; God (as
+Bertrand Russell proclaimed), a differential equation; the mind, a
+garden that yearns to be cultivated. But our media-metaphors are not so
+explicit or so vivid as these, and they are far more complex.  In
+understanding their metaphorical function, we must take into account the
+symbolic forms of their information, the source of their information,
+the quantity and speed of their information, the context in which their
+information is experienced.  Thus, it takes some digging to get at them,
+to grasp, for example, that a clock recreates time as an independent,
+mathematically precise sequence; that writing recreates the mind as a
+tablet on which experience is written; that the telegraph recreates news
+as a commodity.  And yet, such digging becomes easier if we start from
+the assumption that in every tool we create, an idea is embedded that
+goes beyond the function of the thing itself.  It has been pointed out,
+for example, that the invention of eyeglasses in the twelfth century not
+only made it possible to improve defective vision but suggested the idea
+that human beings need not accept as final either the endowments of
+nature or the ravages of time.  Eyeglasses refuted the belief that
+anatomy is destiny by putting forward the idea that our bodies as well
+as our minds are improvable. I do not think it goes too far to say that
+there is a link between the invention of eyeglasses in the twelfth
+century and gene-splitting research in the twentieth. Even such an
+instrument as the microscope, hardly a tool of everyday use, had
+embedded within it a quite astonishing idea, not about biology but about
+psychology.  By revealing a world hitherto hidden from view, the
+
+microscope suggested a possibility about the structure of the mind. If
+things are not what they seem, if microbes lurk, unseen, on and under
+our skin, if the invisible controls the visible, then is it not possible
+that ids and egos and superegos also lurk somewhere unseen?  What else
+is psychoanalysis but a microscope of
+the mind?  Where do our notions of mind come from if not from metaphors
+generated by our tools?  What does it mean to say that someone has an IQ
+of 126?  There are no numbers in people's heads.  Intelligence does not
+have quantity or magnitude, except as we believe that it does.  And why
+do we believe that it does?  Because we have tools that imply that this
+is what the mind is like.  Indeed, our tools for thought suggest to us
+what our bodies are like, as when someone refers to her "biological
+clock," or when we talk of our "genetic codes," or when we read
+someone's face like a book, or when our facial expressions telegraph our
+intentions. When Galileo remarked that the language of nature is written
+in mathematics, he meant it only as a metaphor.  Nature itself does not
+speak.  Neither do our minds or our bodies or, more to the point of this
+book, our bodies politic.  Our conversations about nature and about
+ourselves are conducted in whatever "languages" we find it possible and
+convenient to employ.  We do not see nature or intelligence or human
+motivation or ideology as "it" is but only as our languages are.  And
+our languages are our media.  Our media are our metaphors.  Our
+metaphors create the content of our culture.
+      </p>
+    </div>
+      </div>
+    <script>timer()</script>
+    <div id="amusement_timer" class="regular background_grey black button bottom_sticky_button">
+    </div>
+  </body>
+</html>

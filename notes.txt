@@ -1,0 +1,14 @@
+to-do:
+2. timer!!!
+3. resources (low priority rn)
+4. scrolling view??? (optional)
+5. interactivity of amusement page
+6. chart.js(bar, visualize time) [optional]
+
+debug:
+1. sticky buttons
+2. maze shorts change outer div left and top
+
+style:
+1. find a better font
+2. primary color

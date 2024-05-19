@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/de3a8ecd-7916-4eda-9307-f16c78cef0e2/icon.png?v=1713141548508"
+    />
+
+    <title>Cyberland</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <!--    jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="/congrats_script.js"></script>
+  </head>
+  
+  <body class="congrats">
+    <div
+      id="back_button"
+      class="regular background_grey black button top_sticky_button" onclick="window.location='/maze.html'"
+    >
+      <img
+        src="https://cdn.glitch.global/de3a8ecd-7916-4eda-9307-f16c78cef0e2/Arrow.png?v=1713952319819"
+      />
+    </div>
+    <div class="title_container">
+      <div class="regular title black">CONGRATS ON ESCAPING</div>
+    </div>
+    <div class="regular" style="position: relative; top: 27vh; font-size: 30px; text-align: center">
+      You were lost in the maze for <span id="maze_time_spent"></span> and swam in <i>Amusing Ourselves to Death</i> for <span id="amusement_time_spent"></span> 
+    </div>
+    <div class="index_button_wrapper">
+      <div id="quit_button" class="regular background_black white button" style="top: 35vh;" onclick="window.location='/resources.html'">
+        Quit
+      </div>
+    </div>
+    <script src="background_mirror.js"></script>
+  </body>
+</html>
+
