@@ -59,7 +59,7 @@ h1, h2, h3, summary {
     display: none;
 }
 
-#presentation_img: hover {
+#presentation_img:hover {
   cursor: pointer;
 }
 
