@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!--Update with your name-->
+    <title>Serena's Homepage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js"></script>
+  </head>
+
+  <body>
+    <script src="background.js"></script>
+    <div class="left_table">
+      <div class="table_element" onclick="window.location='#name'">
+        <a>Back to Top ^</a>
+      </div>
+      <div class="table_element" onclick="window.location='#presentation'">
+        <a>Presentation</a>
+      </div>
+      <div class="table_element" onclick="window.location='#projects'">
+        <a>Projects</a>
+      </div>
+      <div class="table_element" onclick="window.location='#exercises'">
+        <a>Exercises</a>
+      </div>
+      <div class="table_element" onclick="window.location='#thoughts'">
+        <a>Thoughts</a>
+      </div>
+    </div>
+    <div class="readable">
+      <div>
+      <!--Update with your name-->
+      <h1 id="name">Serena Li</h1>
+
+      <p style="text-align: center;">Serena (Latin): Serene, but a little mischievous.</p>
+    </div>
+
+    <div class="flex_container">
+      <h1 id="presentation">Pecha Kucha Presentation: Genuary</h1>
+      <img id="presentation_img" style="width: 600px" src="https://cdn.glitch.global/caf48707-bc33-4d5a-8a7a-13a9a1abdd0d/Screenshot%202024-05-01%20at%203.01.42%E2%80%AFPM.png?v=1714600938304" onclick="window.location='https://docs.google.com/presentation/d/1bcBCkPiQ7dzV0K62NEQNSOcF94gO0IXLlSh6NwTCZms/edit?usp=sharing'">
+    </div>
+    <div>
+      <h1 id="projects">Projects</h1>
+      <h2>Project 1: Interactive Audio and Visual with p5.js</h2>
+      <div class="flex_container">
+        <!--     flexbox, hover show content, else show title   -->
+        <div id="ex0" class="flex_box" style="width: 600px; height: 350px">
+        <a id="ex0_a" href="https://editor.p5js.org/Serena20003/sketches/gnxRiyB3B">
+          Valentines
+          </a>
+        <iframe id="ex0_if"
+          src="https://editor.p5js.org/Serena20003/full/gnxRiyB3B"
+        ></iframe>
+        </div>
+      </div>
+      <p>
+        Express your feelings by saying "I love you" to the blue cold heart and
+        see fireworks go off! You can also set off more fireworks by clicking
+        your mouse when the heart goes BOOM BOOM! However, if you say "Sorry",
+        then the heart will become blue and cold again
+      </p>
+
+      <h2>Project 2: HyperNarrative</h2>
+      <div class="flex_container">
+        <!--     flexbox, hover show content, else show title   -->
+        <div id="ex8" class="flex_box" style="width: 600px; height: 400px">
+        <a id="ex8_a" href="https://fight-simulator.glitch.me/">
+          Fight Simulator
+          </a>
+        <img id="ex8_if"
+          src="https://cdn.glitch.global/caf48707-bc33-4d5a-8a7a-13a9a1abdd0d/Screenshot%202024-05-01%20at%202.56.08%E2%80%AFPM.png?v=1714600649273"
+        />
+        </div>
+      </div>
+      <a
+        href="https://www.figma.com/file/IWd8us3ojclDGKBFe94q7i/iml300-project-2?type=design&node-id=103%3A236&mode=design&t=01cGXKFF3jwEgD7f-1"
+        >Figma Concept for Fight Simulator</a
+      ><br />
+      <p>
+        <em>
+          I want to use this project to advocate for people to be more patient
+          with their family members, calm down and think before responding, and
+          love each other.
+        </em>
+      </p>
+      <p>
+        I am always intrigued by games that mislead the users into making
+        choices that might lead to a not-so-great ending (false ending). With
+        this idea and the want to do something related to family relations and
+        tensions, I wanted to create something that provokes reflection for the
+        users. The game starts with a tutorial that encourages fight and
+        portrays the family as a fighting arena. The user would be misled into
+        wanting to win the game by saying negative things towards the opponent.
+        They win the argument, but they will soon realize that they lost the
+        game because they hurt the family member. They will have to realize that
+        they need to wait for the timer to run out and a hidden option appears.
+        The option is a calmer response (physically not shaking when hovered).
+        That will unlock the good ending.
+      </p>
+
+      <h2>Project 3: Networked Care</h2>
+      <div class="flex_container">
+        <!--     flexbox, hover show content, else show title   -->
+        <div id="ex9" class="flex_box" style="width: 600px; height: 400px">
+        <a id="ex9_a" href="https://cyberland.glitch.me">
+          CyberLand
+          </a>
+        <img id="ex9_if"
+          src="https://cdn.glitch.global/caf48707-bc33-4d5a-8a7a-13a9a1abdd0d/Screenshot%202024-05-01%20at%202.55.43%E2%80%AFPM.png?v=1714600645926"
+        />
+        </div>
+      </div>
+      <a href="https://www.figma.com/file/IWd8us3ojclDGKBFe94q7i/projects?type=design&node-id=278%3A79&mode=design&t=IWWZP0uvZCrzf8BD-1">Figma Concept for CyberLand</a>
+      <br />
+      <p>
+        This project is inspired by the booming of short form videos especially during Covid. The attntion span reduces significantly as the generations progress in society. As someone who is deeply affected by this issue, I really wanted to make a project that mimics the experience and make the audience realize how much time they ight be wasting on the day-to-day scrolling. I hope people will do more things out of the phone and truly experience life.
+      </p>
+    </div>
+
+    <div>
+      <h1 id="exercises">Exercises</h1>
+<!--     flexbox container   -->
+      <div class="flex_container">
+        <!--     flexbox, hover show content, else show title   -->
+        <div id="ex1" class="flex_box" style="width: 400px; height: 450px">
+        <a id="ex1_a" href="https://editor.p5js.org/Serena20003/sketches/Xr5K1kZVD">
+          Human?
+          </a>
+        <iframe id="ex1_if"
+          src="https://editor.p5js.org/Serena20003/full/Xr5K1kZVD"
+        ></iframe>
+        </div>
+        <div id="ex2" class="flex_box" style="width: 500px; height: 450px">
+          <a id="ex2_a" href="https://editor.p5js.org/Serena20003/sketches/nj2OswhOx"
+            >Grow a tree!</a
+          >
+        <iframe id="ex2_if"
+          src="https://editor.p5js.org/Serena20003/full/nj2OswhOx"
+        ></iframe>
+              </div>
+        <div id="ex3" class="flex_box" style="width: 800px; height: 850px">
+          <a id="ex3_a" href="https://editor.p5js.org/Serena20003/sketches/hIsrF7ybL"
+            >Stamp (msfq SPACEBAR)</a
+          >
+        <iframe id="ex3_if"
+          src="https://editor.p5js.org/Serena20003/full/hIsrF7ybL"
+        ></iframe>
+            </div>
+        <div id="ex4" class="flex_box" style="width: 400px; height: 450px">
+          <a id="ex4_a" href="https://editor.p5js.org/Serena20003/sketches/lWzM6gYiA"
+            >Static Playlit Cover</a
+          >
+        <iframe id="ex4_if"
+          src="https://editor.p5js.org/Serena20003/full/lWzM6gYiA"
+        ></iframe>
+            </div>
+        <div id="ex5" class="flex_box" style="width: 400px; height: 450px">
+          <a id="ex5_a" href="https://editor.p5js.org/Serena20003/sketches/T888ExOnA"
+            >Music Video for <em>The Night Is Faint</em></a
+          >
+        <iframe id="ex5_if"
+          src="https://editor.p5js.org/Serena20003/full/T888ExOnA"
+        ></iframe>
+  </div>
+        <div id="ex6" class="flex_box" style="width: 800px; height: 850px">
+          <a id="ex6_a" href="https://everythingevery.glitch.me/"
+            >Everything Everywhere All At Once</a
+          >
+        <iframe id="ex6_if"
+          src="https://everythingevery.glitch.me/"
+        ></iframe>
+            </div>
+        <div id="ex7" class="flex_box" style="width: 800px; height: 850px">
+          <a id="ex7_a" href="https://editor.p5js.org/Serena20003/sketches/ifNaP_T_A"
+            >Poem: When Love Arrives</a
+          >
+        <iframe id="ex7_if"
+          src="https://editor.p5js.org/Serena20003/full/ifNaP_T_A"
+        ></iframe>
+            </div>
+    </div>
+    </div>
+
+    <h1 id="thoughts">Thoughts</h1>
+    <details>
+      <summary>Black Gooey Universe</summary>
+      <p>
+        "Black Gooey Universe" seemed like an innocent discussion of the history
+        of the graphical user interface at a glance, however, reading more
+        closely, the passage and the artist are constantly questioning the
+        status quo of the "white" GUI in replacement of the original "black"
+        GUI, and acts as a metaphor of the real world class division and loss of
+        voice from the black population specifically in the tech industry. It is
+        important to constantly reflect the bigger context of significant design
+        choices and their implications. It's also interesting to see the article
+        point out the separation between programmers and ordinary users from
+        using the black and white screens as the computers nowadays come with
+        dark and light mode, and sometime using light mode in certain
+        applications will be looked down upon.
+      </p>
+      <details>
+        <summary>Questions:</summary>
+        <p>
+          How could we be more aware of our own cultural biases when making
+          design choices like GUI? What makes a GUI user-friendly, and FOR WHOM
+          are we designing for? How do we make sure it is usable for our
+          targetted audience? What can we do for products that have existing
+          biases?
+        </p>
+      </details>
+    </details>
+    <details>
+      <summary>Jenny</summary>
+      <p>
+        From reading the article by Jenny, I was taken on a journey of the
+        Internet and other technologies through the different ways of
+        introducing them to the general public. It was a very nostalgic piece
+        with a lot of personal experience intertwined in the history of
+        technology. This article was written in 2016, even before the boom of
+        short video forms and social media saturation. Looking back on her
+        example of Rando being an app allowing people to look into others' lives
+        with the booming use of BeReal (or rather, BeFake), it's interesting
+        that the functionalities of both apps are essentially the same, but the
+        effect of them are totally different. Rando was all about spontaneous
+        and connecting strangers, while BeReal was about keeping up with friends
+        and showing them fragments of your life. Looking at the picture of a
+        toilet, I chuckled, thinking that this type of picture will probably
+        never appear on BeReal. Why is that? Is it because of the audience in
+        the change of time? I am also a little sad from reading the article now
+        😦
+      </p>
+      <details>
+        <summary>Questions:</summary>
+        <p>
+          How do people forge connections in the modern day? Should we regulate
+          the Internet? If so, how much? Is the Internet back then really better
+          than the Internet now? Or is it actually the opposite around?
+        </p>
+      </details>
+    </details>
+
+    <details>
+      <summary>Lauren McCarthy</summary>
+      <p>
+        I really enjoyed the presentation by Lauren McCarthy. I am amazed by her
+        ideas and how she executes those ideas into art projects. My favorite is
+        the "Follow" project, the duality of virtual followers and followers in
+        real life as well as the duality of a creepy stalker and a "innocent"
+        follower is very interesting. Her project reveals the conflicting
+        feeling of both needing to be watched and the fear of being watched. In
+        this presentation from 2019, the issues are more prevalent than before
+        as social media grows larger and popular. It is fun to see real people
+        trying to replace Artificial Intelligence as an experiment of what
+        people want their relationship with personal assistants is like. As
+        technology advances, humans are more reliant on technology and workers
+        are being replaced, Lauren McCarthy's work tries to explore the
+        possibility of having the primitive humanistic relationships and asking
+        if AI is the best solution when people crave human interactions instead
+        of mechanical ones.
+      </p>
+      <details>
+        <summary>Questions:</summary>
+        <p>
+          What causes the conflict between wanting to be seen and the fear of
+          being seen? What is the relationship between humans and AI? To what
+          extent is artistic projects allowed to invade personal boundaries and
+          privacies?
+        </p>
+      </details>
+    </details>
+
+    <details>
+      <summary>Memes and overcompressed</summary>
+      <p>
+        This week's reading is really interesting as it tries to identify a
+        purpose behind over-compressed images that are exchanged across the web
+        every second. There is a saying in China called 包浆, which is
+        originally a jargon in antique collectivist, meaning the antique has a
+        long history so that its surface is covered in a oxidized layer. In the
+        context of online images, the term laughs at the images that have been
+        re-uploaded so many times that the images have such poor quality. It is
+        often seen as a compliment that the image is very popular hence why it
+        is being re-uploaded so many times. As the article refers back many
+        times: the poor images are not about the original message anymore, but
+        instead, about its appropriations and exploitation. It is taken out of
+        its original context and given a new meaning that is more temporal with
+        the online audience. It can be edited and modified easily with the help
+        of modern technology. It transfers the ownerships from a singular source
+        to anyone who wants to modify it, making the knowledge decentralized.
+      </p>
+      <details>
+        <summary>Questions:</summary>
+        <p>
+          Who owns the images? Is it an art form or just an appropriation? Are
+          poor images liberalizing or reinforcing institutions?
+        </p>
+      </details>
+    </details>
+
+    <details>
+      <summary>AI</summary>
+      <p>
+        As Artificial Intelligence technology develops rapidly, more and more
+        parameters get passed into large language models, it is important to
+        consider AI ethics and its data diversity. Training data is always very
+        important for AI to learn about the world we are living in. However, I
+        sometimes wonder, is it really possible for an AI to be "omniscent" in a
+        sense and really become unbiased completely? There are so many different
+        people, different opinions in the world, who gets to define an
+        "objectivity"? Would it be better for us just to accept that AIs are
+        regional and have bias, just like humans, so we won't have one common
+        source of truth, when we will never be sure that it understands
+        everything in the big wide world? When one bias is fought, are there
+        other biases we neglected throughout the process? In the call for
+        action, Joy asked the audience to take action by uploading selfies to
+        help diversify the data source for the facial recognition model. But
+        linking it back to data privacy from week 4's reading, how secure are
+        those data? How do we separate, or would we ever be able to separate
+        private lives and mere data inputs into a cold AI machine?
+      </p>
+
+      <details>
+        <summary>Questions:</summary>
+        <p>
+          Will AI ever be "objective"? Is it ever ethical to obtain training
+          data from the web without user explicit consent? What is diversity and
+          how do we really achieve it in AI?
+        </p>
+      </details>
+    </details>
+
+    <details>
+      <summary>Diversity</summary>
+      <p>
+        When the Professor showed the slide of "Land Acknowledgement", I was
+        very surprised as it was my first time hearing this powerful statement
+        in a class. I think it is really important to acknowledge the
+        significance of the people who really "own" the land. And I was then
+        also reflective on the fact that this class was the only class that
+        mentions this, which links to the "single story" TED talk, as our
+        education system seems to have a very one-sided narrative that does not
+        give enough importance to the history of the native lands. That is
+        dangerous as we might lose the heritage of those native lands where they
+        have a lack of examples in literature and learning resources. As a
+        computer science student, we often talk about efficiency and how to save
+        resources from a perspective of cost, rarely about actual spacial
+        influence and effects on people in the construction of those physical
+        objects.
+      </p>
+      <details>
+        <summary>Questions:</summary>
+        <p>
+          How to make learning resources more diverse? Why is Land
+          Acknowledgement not a standard in today's world? How do we bring
+          awareness to more industries?
+        </p>
+      </details>
+    </details>
+
+    <details>
+      <summary>Digital Feminism</summary>
+      <p>
+        I was surprised by Systers, a safe online forum for women in tech
+        computing. I was surprised because of how small the original email list
+        started off to be: only 12 people, and how big it grew today: "8,500
+        members from more than 65 countries". It is truly amazing to see how
+        much a group of strongly willed people can do, and the power of
+        community. It now also has a Discord, not just a email list, which might
+        be a reason why it is still active today: it is adapting to new
+        environments and technologies, unafraid of the challenge that this
+        fast-changing society is bringing it, but embracing it, and using it as
+        its advantage.
+      </p>
+      <details>
+        <summary>Questions:</summary>
+        <p>
+          How do older media adapt to this new environment and demand? How are
+          communities for women helping women thrive in the industry?
+        </p>
+      </details>
+    </details>
+    
+    <details>
+      <summary>ASL and music</summary>
+      <p>
+        I am always intrigued by the rich culture and community of ASL. 
+        I love how Kim transform such a visual language into visual artwork, 
+        but at the same time have such rich rhythm and sound. She touches on 
+        one of the topics we have discussed before: non-linear narrative. 
+        She says that ASL is very non-linear while spoken language is more linear. 
+        I think spoken language also has similar non-linear properties like ASL, 
+        as we take body language and expressions into account as well. 
+        However, ASL is indeed more expressive in the body language and look more performative and vibrant. 
+        It is an art within itself.
+      </p>
+      <details>
+        <summary>Questions:</summary>
+        <p>
+          how to really be inclusive?
+        </p>
+      </details>
+    </details>
+
+    <footer>Spring, 2024.</footer>
+      </div>
+  </body>
+</html>

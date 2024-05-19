@@ -1,0 +1,77 @@
+canvas {
+  display: block;
+}
+
+.readable {
+  width: 70vw; 
+  left: 15vw;
+  top: -125px;
+  position: relative;
+}
+
+.oxygen-light, a {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.oxygen-regular, p  {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oxygen-bold, h1, h2, h3, summary {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1, h2, h3, summary {
+  text-align: center;
+}
+
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex_box {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin: 15px;
+}
+
+.flex_box a, .flex_box iframe {
+  position: absolute;
+  width: inherit;
+    text-align: center;
+}
+
+.flex_box iframe {
+  height: inherit;
+}
+
+.flex_box a {
+    display: none;
+}
+
+#presentation_img: hover {
+  cursor: pointer;
+}
+
+.left_table {
+    position: sticky;
+    top: 5px;
+}
+
+.left_table div {
+    margin: 5px;
+}
+
+.left_table div:hover {
+  cursor:pointer;
+}
