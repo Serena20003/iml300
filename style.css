@@ -75,3 +75,18 @@ h1, h2, h3, summary {
 .left_table div:hover {
   cursor:pointer;
 }
+
+.big_window {
+  width: 800px; 
+  height: 750px
+}
+
+.small_window {
+  width: 400px; 
+  height: 450px
+}
+
+.project_window {
+  width: 600px; 
+  height: 400px
+}
